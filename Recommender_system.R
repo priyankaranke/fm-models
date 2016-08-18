@@ -19,6 +19,6 @@ recobuilder <- as(df1, "realRatingMatrix")
 rec <- Recommender(recobuilder, method = "UBCF") #Building a recommender model with User-based CF
 
 # ---Building top-N predictions using recommender model---
-pre <- predict(rec, recobuilder[26, ], n = 10)
+pre <- predict(rec, recobuilder[26, ], n = 10)  #predicts 10 cities for franchise number 26
 as(pre, "list")
 
